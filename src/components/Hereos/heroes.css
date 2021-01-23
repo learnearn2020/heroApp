@@ -1,0 +1,5 @@
+.heroes {
+  display: grid;
+  /* grid-template-columns: repeat(autofix, minmax(1fr, 400px)); */
+  grid-template-columns: repeat(3, 1fr);
+}
