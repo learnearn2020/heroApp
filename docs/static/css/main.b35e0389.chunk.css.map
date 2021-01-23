@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/Hereos/heroes.css"],"names":[],"mappings":"AAAA,QACE,YAAa,CAEb,mCACF","file":"main.b35e0389.chunk.css","sourcesContent":[".heroes {\r\n  display: grid;\r\n  /* grid-template-columns: repeat(autofix, minmax(1fr, 400px)); */\r\n  grid-template-columns: repeat(3, 1fr);\r\n}\r\n"]}
