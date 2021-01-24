@@ -1,7 +1,6 @@
 import React, { useMemo } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { getHeroeById } from "../../selectors/getHeroeById";
-import { HeroCard } from "./HeroCard";
 
 export const HeroeScreen = ({ history }) => {
   const handleBack = () => {

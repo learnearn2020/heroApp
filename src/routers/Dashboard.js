@@ -1,17 +1,10 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Redirect,
-} from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import { DcScreen } from "../components/Dc/DcScreen";
 import { HeroeScreen } from "../components/Hereos/HeroeScreen";
 import { MarvelScreen } from "../components/Marvel/MarvelScreen";
 import { Search } from "../components/search/Search";
 import { Navbar } from "../components/ui/NavBar";
-import { HereosApp } from "../HereosApp";
 
 export const Dashboard = () => {
   return (

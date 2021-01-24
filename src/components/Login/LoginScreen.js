@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AuthContext } from "../../auth/AuthContext";
+import { types } from "../../types/types";
 
 export const LoginScreen = ({ history }) => {
+  // usar el context Auth
+  const { dispatch } = useContext(AuthContext);
+  const laspath = localStorage.getItem("lastPast") || "/";
   const handleLogin = (e) => {
     e.preventDefault();
     // te permite mandar el usuario a otra pagina guardando la historia
     // history.push("/marvel");
     // te permite mandar el usuario a otra pagina sin guardando la historia
-    history.replace("/marvel");
+    // history.replace("/marvel");
+    // const newAction = {
+    //   type: types.login,
+    //   payload: {
+    //     name: "Hilaire",
+    //   },
+    // };
+    dispatch({
+      type: types.login,
+      payload: {
+        name: "Hilaire",
+      },
+    });
+    history.replace(laspath);
   };
   return (
     <div className="container  mt-5">
